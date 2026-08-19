@@ -72,3 +72,21 @@ footer {
         float: none;
     }
 }
+.counter {
+    text-align: center;
+}
+
+.counter button {
+    background-color: #1f4e79;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.counter span {
+    font-size: 22px;
+    margin: 15px;
+}

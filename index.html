@@ -54,7 +54,15 @@
                 </div>
             </div>
         </section>
+        <section>
+            <h2>Projects I Plan to Build</h2>
 
+            <div class="counter">
+                <button onclick="decrease()">-</button>
+                <span id="count">0</span>
+                <button onclick="increase()">+</button>
+            </div>
+        </section>
         <section>
             <h2>Contact</h2>
             <p>Email: smrithilgujaran@gmail.com</p>
@@ -69,6 +77,20 @@
     <footer>
         <p>Thank you for visiting my portfolio</p>
     </footer>
+<script>
+    let count = 0;
 
+    function increase() {
+        count++;
+        document.getElementById("count").innerHTML = count;
+    }
+
+    function decrease() {
+        if (count > 0) {
+            count--;
+            document.getElementById("count").innerHTML = count;
+        }
+    }
+</script>
 </body>
 </html>
